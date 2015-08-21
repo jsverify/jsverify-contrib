@@ -11,7 +11,6 @@ KARMA=$(BINDIR)/karma
 BROWSERIFY=$(BINDIR)/browserify
 LJS=$(BINDIR)/ljs
 DAVID=$(BINDIR)/david
-RJSON=$(BINDIR)/rjson
 
 all : test
 
@@ -22,11 +21,8 @@ test-travis : test test-readme
 MODULES=set
 SRC=index.js $(MODULES)
 
-eslint : .eslintrc
+eslint :
 	$(ESLINT) $(SRC)
-
-.eslintrc : .eslintrc.rjson
-	$(RJSON) .eslintrc.rjson > .eslintrc
 
 jscs :
 	$(JSCS) $(SRC)

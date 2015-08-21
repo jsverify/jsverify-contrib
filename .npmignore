@@ -1,6 +1,5 @@
 .npmignore
 .eslintrc
-.eslintrc.rjson
 .jscsrc
 .travis.yml
 
