@@ -1,0 +1,38 @@
+{
+  "name": "jsverify-contrib",
+  "version": "1.0.0",
+  "description": "Bells and whistles for jsverify",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsverify/jsverify-contrib.git"
+  },
+  "keywords": [
+    "jsverify",
+    "contrib",
+    "quickcheck",
+    "testing"
+  ],
+  "author": "Oleg Grenrus <oleg.grenrus@iki.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsverify/jsverify-contrib/issues"
+  },
+  "homepage": "https://github.com/jsverify/jsverify-contrib#readme",
+  "dependencies": {
+    "jsverify": "^0.6.3",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "david": "^6.2.0",
+    "eslint": "^1.2.1",
+    "istanbul": "^0.3.18",
+    "jscs": "^2.1.0",
+    "ljs": "^0.3.1",
+    "mocha": "^2.2.5",
+    "relaxed-json": "^1.0.0"
+  }
+}
