@@ -1,6 +1,6 @@
 {
   "name": "jsverify-contrib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bells and whistles for jsverify",
   "main": "index.js",
   "scripts": {
