@@ -18,12 +18,14 @@
 ```js
 var jsc = require("jsverify-contrib");
 var jscSet = require("jsverify-contrib/set");
+var jscDRange = require("jsverify-contrib/drange");
 ...
 ```
 
 */
 
 /// include ./set/index.js
+/// include ./drange/index.js
 /// plain ./CONTRIBUTING.md
 /// plain ./CHANGELOG.md
 /// plain ./LICENSE
