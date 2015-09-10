@@ -4,14 +4,14 @@
  Selecting numbers uniformly from multiple ranges
 
  ```js
- var drangeArb = require("jsverify-contrib/drange");
+ var fromDiscontinuousRangeArb = require("jsverify-contrib/drange").fromDiscontinuousRange;
  ```
 
  In the following example `d` will generate 0, 1, 4, or 5.
  ```
  var includedRanges = [{low: 0, high: 5}];
  var excludeRanges = [{low: 2, high: 3}];
- var d = drangeArb(includedRanges, excludedRanges);
+ var d = fromDiscontinuousRangeArb(includedRanges, excludedRanges);
  ```
  */
 
@@ -46,4 +46,4 @@ function drange(includeRanges, excludeRanges) {
   });
 }
 
-module.exports = drange;
+exports.fromDiscontinuousRange = drange;
