@@ -14,6 +14,7 @@
 ```js
 var jsc = require("jsverify-contrib");
 var jscSet = require("jsverify-contrib/set");
+var jscDRange = require("jsverify-contrib/drange");
 ...
 ```
 
@@ -25,6 +26,21 @@ Arbitrary for sets represented by an array, i.e. arrays without duplicates.
 var setArb = require("jsverify-contrib/set");
 ```
 
+## Discontinuous Range
+
+Selecting numbers uniformly from multiple ranges
+
+```js
+var fromDiscontinuousRangeArb = require("jsverify-contrib/drange").fromDiscontinuousRange;
+```
+
+In the following example `d` will generate 0, 1, 4, or 5.
+```
+var includedRanges = [{low: 0, high: 5}];
+var excludeRanges = [{low: 2, high: 3}];
+var d = fromDiscontinuousRangeArb(includedRanges, excludedRanges);
+```
+
 ## Contributing
 
 - `README.md` is generated from the source with [ljs](https://github.com/phadej/ljs)
@@ -32,6 +48,7 @@ var setArb = require("jsverify-contrib/set");
 
 ## Release History
 
+- **1.1.0** &mdash; *2015-09-11* &mdash; Discontinuos range number generation
 - **1.0.1** &mdash; *2015-08-24* &mdash; Bump dependencies version
 - **1.0.0** &mdash; *2015-08-21* &mdash; Initial release
 
