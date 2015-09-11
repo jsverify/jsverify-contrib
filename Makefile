@@ -18,7 +18,7 @@ test : eslint jscs mocha istanbul david
 
 test-travis : test test-readme
 
-MODULES=set
+MODULES=set drange
 SRC=index.js $(MODULES)
 
 eslint :
